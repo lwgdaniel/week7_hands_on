@@ -37,7 +37,7 @@ if not check_password():
 # Streamlit App Configuration
 st.set_page_config(layout="centered", page_title="CrapGPT")
 
-st.title("a worse version of chatgpt")
+st.title("a worse version of chatgpt version 2 for annabel")
 
 
 # Sidebar for page navigation
