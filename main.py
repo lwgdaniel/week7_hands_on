@@ -6,9 +6,14 @@ import os
 from dotenv import load_dotenv
 from openai import OpenAI
 
-load_dotenv('.env')
+#for local
+#
+# load_dotenv('.env')
 
-client = OpenAI(api_key=os.getenv('OPENAI_API_KEY'))
+
+key = st.secrets('OPENAI_API_KEY')
+
+client = OpenAI(api_key=key)
 
 def get_completion_by_messages(messages, model="gpt-4o-mini", temperature=0, top_p=1.0, max_tokens=1024, n=1):
     response = client.chat.completions.create(
