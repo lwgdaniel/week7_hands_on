@@ -1,5 +1,6 @@
 
 ##########  setup llm pipe
+import streamlit as st
 import openai 
 import dotenv
 import os
@@ -25,10 +26,6 @@ def get_completion_by_messages(messages, model="gpt-4o-mini", temperature=0, top
         n=1
     )
     return response.choices[0].message.content
-
-##########  streamlit 
-
-import streamlit as st
 
 # Check password
 
