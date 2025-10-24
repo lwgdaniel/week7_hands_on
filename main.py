@@ -12,9 +12,9 @@ from openai import OpenAI
 # load_dotenv('.env')
 
 
-key = st.secrets('OPENAI_API_KEY')
+keyyy = st.secrets("OPENAI_API_KEY")
 
-client = OpenAI(api_key=key)
+client = OpenAI(api_key=keyyy)
 
 def get_completion_by_messages(messages, model="gpt-4o-mini", temperature=0, top_p=1.0, max_tokens=1024, n=1):
     response = client.chat.completions.create(
