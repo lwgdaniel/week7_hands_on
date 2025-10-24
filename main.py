@@ -59,7 +59,10 @@ if page == "Chat":
     # Chat input 
     user_prompt = st.text_area("Write some text below...", height=100)
 
-    if user_prompt:
+    # Add a submit button
+    submit = st.button("Submit")
+
+    if submit or user_prompt.strip():
         # Store user message
         st.session_state.messages.append({"role": "user", "content": user_prompt})
 
