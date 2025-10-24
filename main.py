@@ -12,7 +12,7 @@ from openai import OpenAI
 # load_dotenv('.env')
 
 
-keyyy = st.secrets("OPENAI_API_KEY")
+keyyy = st.secrets["OPENAI_API_KEY"]
 
 client = OpenAI(api_key=keyyy)
 
