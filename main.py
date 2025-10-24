@@ -1,6 +1,7 @@
 
 ##########  setup llm pipe
-
+import openai 
+import dotenv
 import os
 from dotenv import load_dotenv
 from openai import OpenAI
